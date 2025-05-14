@@ -3,7 +3,6 @@ import zipfile
 import os
 import tempfile
 from bs4 import BeautifulSoup
-import shutil
 
 st.title("🔍 Kita cek siapa nih yg belum follback Instagram :v")
 
@@ -47,13 +46,13 @@ if uploaded_file is not None:
             not_following_back = sorted(following - followers)
 
             if not_following_back:
-                st.success(f"🔎 Ditemukan {len(not_following_back)} nih akun yang belum follow baliknya guys:")
+                st.success(f"🔎 Ditemukan {len(not_following_back)} akun yang belum follow balik:")
                 for username in not_following_back:
-                    st.write(f"- {username}")
+                    st.markdown(f"- [{username}](https://instagram.com/{username})")
             else:
-                st.success("🎉 gak ada yang belum di follback!")
+                st.success("🎉 Semua sudah follback! GG!")
 
-# Tambahkan credit di bawah
+# Credit
 st.markdown("---")
 st.markdown("👨‍💻 Created by [budimanword](https://github.com/budimanword)")
-st.markdown(" Jangan lupa follow :V [arifbman_](https://instagram.com/arifbman_)")
+st.markdown("📷 Jangan lupa follow juga: [arifbman_](https://instagram.com/arifbman_)")
