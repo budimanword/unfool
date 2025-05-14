@@ -5,7 +5,7 @@ import tempfile
 from bs4 import BeautifulSoup
 import shutil
 
-st.title("🔍 Kita cek siapa nih yg belum folloback Instagram :v")
+st.title("🔍 Kita cek siapa nih yg belum follback Instagram :v")
 
 uploaded_file = st.file_uploader("Upload file ZIP nya dimari", type="zip")
 
