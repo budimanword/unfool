@@ -5,9 +5,9 @@ import tempfile
 from bs4 import BeautifulSoup
 import shutil
 
-st.title("🔍 Kita cek siapa nih yg belum followback Instagram :v")
+st.title("🔍 Kita cek siapa nih yg belum folloback Instagram :v")
 
-uploaded_file = st.file_uploader("Upload file ZIP dari Instagram kamu", type="zip")
+uploaded_file = st.file_uploader("Upload file ZIP nya dimari", type="zip")
 
 def extract_usernames_from_file(filepath):
     with open(filepath, "r", encoding="utf-8") as file:
@@ -47,9 +47,13 @@ if uploaded_file is not None:
             not_following_back = sorted(following - followers)
 
             if not_following_back:
-                st.success(f"🔎 Ditemukan {len(not_following_back)} akun yang tidak follow balik:")
+                st.success(f"🔎 Ditemukan {len(not_following_back)} nih akun yang belum follow baliknya guys:")
                 for username in not_following_back:
                     st.write(f"- {username}")
             else:
-                st.success("🎉 Semua akun yang kamu follow juga follow kamu balik!")
+                st.success("🎉 gak ada yang belum di follback!")
 
+# Tambahkan credit di bawah
+st.markdown("---")
+st.markdown("👨‍💻 Created by [budimanword](https://github.com/budimanword)")
+st.markdown(" Jangan lupa follow :V [arifbman_](https://instagram.com/arifbman_)")
