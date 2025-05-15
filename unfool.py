@@ -56,3 +56,4 @@ if uploaded_file is not None:
 st.markdown("---")
 st.markdown("👨‍💻 Created by [budimanword](https://github.com/budimanword)")
 st.markdown("📷 Jangan lupa follow juga: [arifbman_](https://instagram.com/arifbman_)")
+st.markdown("🔍 Link Tutorial: [Klik disini](https://instagram.com/arifbman_)")
